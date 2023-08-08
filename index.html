@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="/src/fonts/stratos/stylesheet.css" />
     <link rel="stylesheet" href="/style.css" />
     <title>Document</title>
   </head>
@@ -52,17 +53,14 @@
           <div class="intro-benefit"></div>
         </div>
 
-        <div class="registration-form">
+        <form class="registration-form" action="#" method="post">
           <p class="form-info">form-info</p>
-          <div class="form-fields">
-            <div class="form-field"></div>
-            <div class="form-field"></div>
-            <div class="form-field"></div>
-            <div class="form-field"></div>
-          </div>
-          <button class="form-button">form-button</button>
-          <p class="form-links">form-links</p>
-        </div>
+          <input type="text" name="name" /><br />
+          <input type="text" name="email" /><br />
+          <input type="text" name="phone" /><br />
+          <input type="text" name="strimer" /><br />
+          <input type="submit" value="Я в деле" />
+        </form>
       </section>
 
       <!-- Шаги к победе -->
@@ -143,12 +141,11 @@
           <img src="" alt="about-school-image" />
         </div>
         <p class="about-school-description">about-school-description</p>
-      </section>
-
-      <!-- Блок для скролла -->
-      <section class="scroll-block">
-        <p class="scroll-block-title">title</p>
-        <button class="scroll-block-button">button</button>
+        <!-- Блок для скролла -->
+        <div class="about-school-scroll">
+          <h2 class="about-school-text">title</h2>
+          <button class="about-school-button">button</button>
+        </div>
       </section>
 
       <!-- Блок регистрации -->
@@ -159,7 +156,7 @@
           <img src="" alt="registration-image" />
         </div>
 
-        <div class="registration-form">
+        <!-- <div class="registration-form">
           <p class="form-info">form-info</p>
           <div class="form-fields">
             <div class="form-field"></div>
@@ -169,7 +166,16 @@
           </div>
           <button class="form-button">form-button</button>
           <p class="form-links">form-links</p>
-        </div>
+        </div> -->
+
+        <form class="registration-form" action="#" method="post">
+          <p class="form-info">form-info</p>
+          <input type="text" name="name" /><br />
+          <input type="text" name="email" /><br />
+          <input type="text" name="phone" /><br />
+          <input type="text" name="strimer" /><br />
+          <input type="submit" value="Я в деле" />
+        </form>
       </section>
 
       <!-- Футер -->
