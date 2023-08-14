@@ -3,11 +3,16 @@
 }
 
 body {
-  font-family: "stratosskyengblack";
+  font-family: "Stratos Skyeng", sans-serif;
   background-color: #ebecf4;
 }
 
 .page {
   background-color: #1e1e1e;
   color: white;
+}
+
+.intro-title {
+  font-style: italic;
+  font-weight: 100;
 }
