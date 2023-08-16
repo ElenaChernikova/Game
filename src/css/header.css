@@ -1,0 +1,42 @@
+.container {
+  padding: 6px 48px;
+}
+
+.header {
+  background-color: #1e242b;
+  min-width: 320px;
+}
+
+.header-logo {
+  visibility: hidden;
+}
+
+.banner-image {
+  visibility: hidden;
+}
+
+.banner-text {
+  visibility: hidden;
+}
+
+.banner-button {
+  visibility: hidden;
+}
+
+@media (min-width: 770px) {
+  .header-logo {
+    visibility: visible;
+  }
+
+  .banner-image {
+    visibility: visible;
+  }
+
+  .banner-text {
+    visibility: visible;
+  }
+
+  .banner-button {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Stratos Skyeng", sans-serif;
+  background-color: grey;
+}
+
+.page {
+  background-color: #272f38;
+  color: white;
+}
