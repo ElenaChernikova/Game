@@ -3,13 +3,35 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   font-family: "Stratos Skyeng", sans-serif;
-  background-color: grey;
+  background-color: #282f37;
+  color: #e4fbff;
 }
 
-.page {
-  background-color: #272f38;
-  color: white;
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /* background-color: pink; */
+}
+
+@media (min-width: 770px) {
+  .container {
+    width: 770px;
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    padding: 0 42px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1366px;
+    padding: 0 103px;
+  }
 }

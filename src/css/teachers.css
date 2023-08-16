@@ -1,0 +1,8 @@
+.teachers-carousel {
+}
+
+@media (max-width: 769px) {
+  .teachers-carousel {
+    padding-top: 42px;
+  }
+}
