@@ -1,8 +1,27 @@
-.teachers-carousel {
+.teachers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.teacher {
+  margin-bottom: 12px;
 }
 
 @media (max-width: 769px) {
   .teachers-carousel {
-    padding-top: 42px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: 770px) {
+  .teachers-carousel {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .teachers-carousel {
+    margin-top: 36px;
   }
 }
