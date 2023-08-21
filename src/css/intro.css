@@ -1,4 +1,170 @@
+/* Заголовок и подзаголовок */
 .intro-title {
-  font-style: italic;
-  font-weight: 100;
+  color: #e4fbff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 50px;
+  letter-spacing: -0.96px;
+  /* margin: 20px 0; */
+}
+
+.intro-description {
+  width: 283px;
+  color: #e4fbff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.09px;
+}
+
+@media (min-width: 770px) {
+  .intro-title {
+  }
+  .intro-description {
+    width: 453px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.192px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-title {
+    font-size: 86px;
+    line-height: 88px;
+    letter-spacing: -1.29px;
+  }
+  .intro-description {
+    width: 603px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.256px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .intro-title {
+    font-size: 124px;
+    line-height: 128px;
+    letter-spacing: -3.1px;
+  }
+  .intro-description {
+    width: 745px;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.6px;
+  }
+}
+
+/* Форма */
+
+.registration-form {
+  display: flex;
+  width: 300px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 16px;
+  background-color: #1e242a;
+  margin: 20px 0;
+}
+
+.registration-form input {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: #394650;
+}
+
+@media (min-width: 770px) {
+  .registration-form {
+  }
+}
+
+@media (min-width: 1024px) {
+  .registration-form {
+  }
+}
+
+@media (min-width: 1366px) {
+  .registration-form {
+  }
+}
+
+.info-after-form a {
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.info-after-form {
+  color: rgba(255, 255, 255, 0.24);
+}
+
+/* Бенефиты */
+
+.intro-benefits {
+  display: flex;
+  width: 300px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 16px;
+  background: #1e242a;
+  color: #e4fbff;
+}
+
+.intro-benefits {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.048px;
+}
+
+@media (min-width: 770px) {
+  .intro-benefits {
+    width: 672px;
+    padding: 24px 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .intro-benefit {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-benefits {
+    width: 940px;
+    padding: 36px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .intro-benefit {
+    letter-spacing: -0.054px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .intro-benefits {
+    width: 1160px;
+    padding: 48px 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-benefit {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.12px;
+  }
 }
