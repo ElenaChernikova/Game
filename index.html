@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/src/css/header.css" />
     <link rel="stylesheet" href="/src/css/teachers.css" />
     <link rel="stylesheet" href="/src/css/intro.css" />
+    <link rel="stylesheet" href="/src/css/Steps.css" />
     <link rel="stylesheet" href="/src/fonts/fonts.css" />
     <title>Document</title>
   </head>
@@ -203,10 +204,18 @@
 
           <!-- Форма -->
           <form class="registration-form" action="#" method="post">
-            <p class="form-info">
-              <!-- неразрывный пробел -->
-              После регистрации вы попадете в&nbsp;телеграм&#8209;бот
-            </p>
+            <div class="form-info">
+              <img
+                class="form-info-chat"
+                src="./src/icons/Chat.svg"
+                alt="benefit-chat"
+                height="24"
+              />
+              <p class="form-info-text">
+                <!-- неразрывный пробел -->
+                После регистрации вы попадете в&nbsp;телеграм&#8209;бот
+              </p>
+            </div>
             <input
               class="form-input"
               type="text"
@@ -219,19 +228,30 @@
               name="email"
               placeholder="your@email.com"
             />
-            <input
-              class="form-input"
-              type="text"
-              name="phone"
-              placeholder="+7 (___) ___-__-__"
-            />
+            <div class="input-phone">
+              <input
+                class="form-input"
+                type="text"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+              />
+
+              <label class="input-phone-label" for="input-phone">
+                <img
+                  class="phone-info"
+                  src="./src/icons/Info.svg"
+                  alt="phone-info"
+                  height="24"
+                />
+              </label>
+            </div>
 
             <select class="form-select" name="strimer" placeholder="Стример">
               <option value="">Стример</option>
-              <option value="dog">1</option>
-              <option value="cat">2</option>
-              <option value="hamster">3</option>
-              <option value="parrot">4</option>
+              <option value="dog">1 teacher</option>
+              <option value="cat">2 teacher</option>
+              <option value="hamster">3 teacher</option>
+              <option value="parrot">4 teacher</option>
               <!-- иконка -->
               <label class="header-search-label" for="header-search">
                 <img
@@ -259,12 +279,29 @@
 
           <!-- Бенефиты -->
           <div class="intro-benefits">
-            <div class="intro-benefit">Утрите нос другим командам</div>
             <div class="intro-benefit">
-              Чекните свои текущие скилы в английском
+              <img
+                class="benefit-results"
+                src="./src/icons/results.svg"
+                alt="benefit-results"
+              />
+              <p>Утрите нос другим командам</p>
             </div>
             <div class="intro-benefit">
-              Получите крутой буст на его раскачку
+              <img
+                class="benefit-lightning"
+                src="./src/icons/Lightning.svg"
+                alt="benefit-lightning"
+              />
+              <p>Чекните свои текущие скилы в английском</p>
+            </div>
+            <div class="intro-benefit">
+              <img
+                class="benefit-key"
+                src="./src/icons/Key.svg"
+                alt="benefit-key"
+              />
+              <p>Получите крутой буст на его раскачку</p>
             </div>
           </div>
         </div>
@@ -273,16 +310,30 @@
       <!-- Шаги к победе -->
       <section class="steps">
         <div class="container">
-          <h2 class="steps-title">steps-title</h2>
-          <div class="steps">
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-            <div class="step"></div>
-          </div>
-          <div class="steps-image">
-            <img src="" alt="steps-image" />
+          <div class="steps-container">
+            <h2 class="steps-title">Путь к победе</h2>
+            <div class="steps-columns">
+              <div class="steps-column">
+                <div class="step">1 шаг</div>
+                <div class="step">2 шаг</div>
+              </div>
+              <div class="steps-column">
+                <div class="step">3 шаг</div>
+              </div>
+              <div class="steps-column">
+                <div class="step">4 шаг</div>
+                <div class="step">5 шаг</div>
+              </div>
+            </div>
+            <div class="steps-image-cup">
+              <img
+                src="./src/img/Steps/Steps-cup-1024px.webp"
+                alt="steps-image"
+              />
+            </div>
+            <div class="steps-image-handle">
+              <img src="./src/img/Steps/HANDLE-1024px.webp" alt="steps-image" />
+            </div>
           </div>
         </div>
       </section>
