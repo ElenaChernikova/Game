@@ -240,6 +240,7 @@
     padding: 36px;
     justify-content: center;
     align-items: flex-start;
+    border-radius: 24px;
   }
   .intro-benefit {
     letter-spacing: -0.054px;
@@ -252,6 +253,7 @@
     padding: 48px 60px;
     justify-content: center;
     align-items: center;
+    border-radius: 32px;
   }
   .intro-benefit {
     font-size: 24px;

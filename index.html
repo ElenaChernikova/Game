@@ -314,25 +314,98 @@
             <h2 class="steps-title">Путь к победе</h2>
             <div class="steps-columns">
               <div class="steps-column">
-                <div class="step">1 шаг</div>
-                <div class="step">2 шаг</div>
+                <div class="step main-step">
+                  <h3 class="step-title">1. Регистрируйтесь на этом сайте</h3>
+                </div>
+                <div class="step">
+                  <h3 class="step-title">2. Переходите в телеграм-бот</h3>
+                  <p class="step-text">
+                    Там будут самые свежие новости конкурса и ссылки на рейды
+                  </p>
+                </div>
               </div>
               <div class="steps-column">
-                <div class="step">3 шаг</div>
+                <div class="step">
+                  <h3 class="step-title">
+                    3. Каждую неделю смотрите челлендж стримера
+                  </h3>
+                  <p class="step-text">Чтобы потренироваться перед рейдом</p>
+                </div>
               </div>
               <div class="steps-column">
-                <div class="step">4 шаг</div>
-                <div class="step">5 шаг</div>
+                <div class="step">
+                  <h3 class="step-title">
+                    4. Проходите рейд и зарабатывайте очки
+                  </h3>
+                  <p class="step-text">Доступ откроется после регистрации</p>
+                </div>
+                <div class="step">
+                  <h3 class="step-title">5. Поднимайтесь  в топ рейтинга</h3>
+                  <p class="step-text">И участвуйте в розыгрыше уроков</p>
+                </div>
               </div>
             </div>
-            <div class="steps-image-cup">
+
+            <!-- <div class="steps-image-cup">
               <img
-                src="./src/img/Steps/Steps-cup-1024px.webp"
+                src="./src/img/Steps/Steps-cup-1366px.webp"
                 alt="steps-image"
               />
             </div>
             <div class="steps-image-handle">
-              <img src="./src/img/Steps/HANDLE-1024px.webp" alt="steps-image" />
+              <img src="./src/img/Steps/HANDLE-1366px.webp" alt="steps-image" />
+            </div> -->
+
+            <div class="steps-image">
+              <picture class="steps-image-cup">
+                <source
+                  srcset="
+                    /src/img/Steps/Steps-cup-1366px.webp,
+                    /src/img/Steps/Steps-cup-1366px2x.webp 2x
+                  "
+                  media="(min-width: 1366px)"
+                />
+                <source
+                  srcset="
+                    /src/img/Steps/Steps-cup-1024px.webp,
+                    /src/img/Steps/Steps-cup-1024px@2x.webp 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <source
+                  srcset="
+                    /src/img/Steps/Steps-cup-770px.webp,
+                    /src/img/Steps/Steps-cup-770px@2x.webp 2x
+                  "
+                  media="(min-width: 770px)"
+                />
+                <source
+                  srcset="
+                    /src/img/Steps/Steps-cup-320px.webp,
+                    /src/img/Steps/Steps-cup-320px@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="/src/img/Steps/Steps-cup-320px.webp" alt="" />
+              </picture>
+
+              <picture class="steps-image-handle">
+                <source
+                  srcset="
+                    /src/img/Steps/HANDLE-1366px.webp,
+                    /src/img/Steps/HANDLE-1366px@2x.webp 2x
+                  "
+                  media="(min-width: 1366px)"
+                />
+                <source
+                  srcset="
+                    /src/img/Steps/HANDLE-1024px.webp,
+                    /src/img/Steps/HANDLE-1024px@2x.webp 2x
+                  "
+                  media="(min-width: 1024px)"
+                />
+                <img src="" alt="" />
+              </picture>
             </div>
           </div>
         </div>

@@ -1,9 +1,15 @@
-.steps {
-}
+/* Контейнер и колонки */
 
 .steps-container {
   background-color: #394650;
   position: relative;
+  width: 100%;
+  /* height: 284px; */
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 16px;
+  margin-top: 36px;
+  margin-bottom: 27px;
+  overflow: auto;
 }
 
 .steps-columns {
@@ -13,41 +19,194 @@
 }
 
 .steps-column {
-  width: 33.3%;
+  /* width: 33.3%; */
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  /* row */
-  height: 220px;
+  justify-content: flex-start;
+  flex-direction: row;
+  /* row vs column */
+  align-items: flex-end;
 }
 
+@media (min-width: 770px) {
+  .steps-container {
+    margin-top: 48px;
+    margin-bottom: 23px;
+  }
+  .steps-columns {
+  }
+  .steps-column {
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-container {
+    border-radius: 32px;
+    margin-top: 76px;
+    margin-bottom: 48px;
+    overflow: initial;
+  }
+  .steps-columns {
+  }
+  .steps-column {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1366px) {
+  .steps-container {
+    border-radius: 32px;
+    margin-top: 84px;
+    margin-bottom: 48px;
+  }
+  .steps-columns {
+  }
+  .steps-column {
+  }
+}
+
+/* Шаги и заголовок */
+
 .step {
-  margin: 30px;
-  height: 50px;
-  background-color: grey;
+  display: inline-block;
+  margin: 16px;
+  border-radius: 16px;
+  background-color: #282f37;
+  padding: 24px;
+  gap: 10px;
+  /* height: 178px; */
+  width: 262px;
+}
+
+.main-step {
+  background-color: #fc7777;
+  height: 96px;
 }
 
 .steps-title {
-  padding: 25px;
-  text-align: center;
-  font-size: 86px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 88px;
-  letter-spacing: -1.29px;
+  text-align: left;
   position: relative;
   z-index: 2;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.96px;
+
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  margin: 0;
 }
+
+.step-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #e4fbff;
+  margin-top: 0;
+}
+
+.step-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: rgba(255, 255, 255, 0.64);
+  margin-bottom: 0;
+}
+
+@media (min-width: 770px) {
+  .step {
+  }
+  .steps-title {
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -0.96px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .step {
+    margin: 24px;
+    border-radius: 24px;
+    padding: 32px;
+    gap: 10px;
+  }
+  .steps-title {
+    padding: 25px;
+    display: block;
+    text-align: center;
+    font-size: 86px;
+    line-height: 88px;
+    letter-spacing: -1.29px;
+  }
+  .step-title {
+    letter-spacing: -0.054px;
+  }
+  .step-text {
+    letter-spacing: -0.054px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .step {
+  }
+  .steps-title {
+    font-size: 124px;
+    line-height: 128px;
+    letter-spacing: -3.1px;
+  }
+  .step-title {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.12px;
+  }
+  .step-text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.12px;
+  }
+}
+
+/* Изображение кубка */
 
 .steps-image-cup {
   position: absolute;
-  left: 95px;
-  top: -165px;
+  top: -115px;
+  left: 9px;
 }
 
 .steps-image-handle {
-  position: absolute;
-  left: 555px;
-  top: -25px;
-  z-index: 3;
+}
+
+@media (min-width: 770px) {
+  .steps-image-cup {
+  }
+  .steps-image-handle {
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-image-cup {
+    left: 95px;
+    top: -165px;
+  }
+  .steps-image-handle {
+    position: absolute;
+    left: 555px;
+    top: -25px;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 1366px) {
+  .steps-image-cup {
+  }
+  .steps-image-handle {
+  }
 }
