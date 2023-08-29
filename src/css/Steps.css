@@ -1,15 +1,49 @@
 /* Контейнер и колонки */
 
+.steps {
+  display: flex;
+  overflow: auto;
+  padding-left: calc((100vw - 315px) / 2);
+  /* убрать скроллбар */
+  scrollbar-width: none;
+}
+/* убрать скроллбар */
+.steps::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .steps {
+    padding-left: calc((100vw - 690px) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps {
+    width: 1024px;
+    padding: 0 42px;
+    overflow: initial;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1366px) {
+  .steps {
+    width: 1366px;
+    padding: 0 103px;
+  }
+}
+
 .steps-container {
   background-color: #394650;
   position: relative;
-  width: 100%;
-  /* height: 284px; */
+  display: flex;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 16px;
   margin-top: 36px;
   margin-bottom: 27px;
-  overflow: auto;
+  padding-top: 45px;
+  padding-bottom: 29px;
 }
 
 .steps-columns {
@@ -24,6 +58,10 @@
   justify-content: flex-start;
   flex-direction: row;
   /* row vs column */
+  align-items: stretch;
+}
+
+.steps-column:first-child {
   align-items: flex-end;
 }
 
@@ -44,8 +82,12 @@
     margin-top: 76px;
     margin-bottom: 48px;
     overflow: initial;
+    display: block;
+    width: 100%;
+    padding: 28px;
   }
   .steps-columns {
+    justify-content: space-between;
   }
   .steps-column {
     flex-direction: column;
@@ -68,14 +110,13 @@
 /* Шаги и заголовок */
 
 .step {
-  display: inline-block;
   margin: 16px;
   border-radius: 16px;
   background-color: #282f37;
   padding: 24px;
   gap: 10px;
-  /* height: 178px; */
   width: 262px;
+  z-index: 2;
 }
 
 .main-step {
@@ -96,8 +137,9 @@
 
   position: absolute;
   left: 16px;
-  top: 16px;
+  top: 36px;
   margin: 0;
+  width: 230px;
 }
 
 .step-title {
@@ -132,10 +174,12 @@
 
 @media (min-width: 1024px) {
   .step {
-    margin: 24px;
+    margin: 24px 0 0 0;
     border-radius: 24px;
     padding: 32px;
     gap: 10px;
+    z-index: 1;
+    width: 279px;
   }
   .steps-title {
     padding: 25px;
@@ -144,6 +188,11 @@
     font-size: 86px;
     line-height: 88px;
     letter-spacing: -1.29px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    left: initial;
+    top: initial;
   }
   .step-title {
     letter-spacing: -0.054px;
@@ -151,10 +200,14 @@
   .step-text {
     letter-spacing: -0.054px;
   }
+  .main-step {
+    height: initial;
+  }
 }
 
 @media (min-width: 1366px) {
   .step {
+    width: 354px;
   }
   .steps-title {
     font-size: 124px;
@@ -177,8 +230,8 @@
 
 .steps-image-cup {
   position: absolute;
-  top: -115px;
-  left: 9px;
+  top: -66px;
+  left: 46px;
 }
 
 .steps-image-handle {
@@ -186,6 +239,8 @@
 
 @media (min-width: 770px) {
   .steps-image-cup {
+    top: -83px;
+    left: 19px;
   }
   .steps-image-handle {
   }
