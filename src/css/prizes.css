@@ -1,0 +1,220 @@
+.prizes {
+  position: relative;
+  margin-bottom: 76px;
+}
+
+/* Заголовок */
+
+.prizes-title {
+  width: 273px;
+  color: #e4fbff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.192px;
+  margin: 0px;
+  margin-bottom: 13px;
+}
+
+@media (min-width: 770px) {
+  .prizes-title {
+    width: 658px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prizes-title {
+    width: 831px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.256px;
+  }
+}
+
+/* Карточки расположение */
+
+.prizes-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prizes-card {
+  width: 140px;
+  height: 96px;
+  padding: 20px 12px 16px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  background-color: #1e242a;
+  position: relative;
+  margin: 0px;
+  margin-top: 28px;
+}
+
+.prizes-card:first-child,
+.prizes-card:last-child {
+  background-color: #394650;
+}
+
+@media (min-width: 770px) {
+  .prizes-card {
+    width: 150px;
+  }
+  .prizes-card:last-child {
+    background-color: #1e242a;
+  }
+  .prizes-card:nth-child(3) {
+    background-color: #394650;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prizes-card {
+    width: 219px;
+    height: 130px;
+    padding: 20px 12px 16px 12px;
+  }
+  .prizes-card:first-child,
+  .prizes-card:nth-child(3) {
+    background-color: #1e242a;
+  }
+}
+
+@media (min-width: 1366px) {
+  .prizes-card {
+    width: 272px;
+    height: 130px;
+    padding: 32px 20px 20px 20px;
+  }
+}
+
+/* Содержимое карточки */
+
+.prizes-card-icon {
+  position: absolute;
+  top: -15px;
+  left: 55px;
+  height: 32px;
+}
+
+.prizes-card-top {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.09px;
+  margin: 0px;
+}
+
+.prizes-card-gift {
+  color: #c2f5ff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.192px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+@media (min-width: 770px) {
+  .prizes-card-icon {
+    position: absolute;
+    top: -15px;
+    left: 59px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prizes-card-icon {
+    position: absolute;
+    top: -15px;
+    left: 97px;
+  }
+  .prizes-card-top {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.12px;
+  }
+  .prizes-card-gift {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.256px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .prizes-card-icon {
+    position: absolute;
+    top: -15px;
+    left: 126px;
+  }
+}
+
+/* Изображения фоновые */
+
+.prizes-image-money {
+  position: absolute;
+  top: -74px;
+  right: 39px;
+  z-index: -1;
+}
+
+.prizes-image-coin {
+  position: absolute;
+  position: absolute;
+  top: 268px;
+  right: 175px;
+  z-index: -1;
+}
+
+/* размеры money 109x215
+размеры coin 163x163 */
+
+@media (min-width: 770px) {
+  .prizes-image-money {
+    top: -66px;
+    right: 20px;
+  }
+  .prizes-image-coin {
+    top: 93px;
+    right: 526px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prizes-image-money {
+    top: -119px;
+    right: 56px;
+  }
+  .prizes-image-money-desktop {
+    position: absolute;
+    top: 20px;
+    right: 186px;
+    z-index: -1;
+  }
+  .prizes-image-coin {
+    top: 133px;
+    right: 766px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .prizes-image-money {
+    top: -133px;
+    right: 162px;
+  }
+  .prizes-image-money-desktop {
+    top: -19px;
+    right: 254px;
+  }
+  .prizes-image-coin {
+    top: 113px;
+    right: 1047px;
+  }
+}

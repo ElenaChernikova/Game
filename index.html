@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/src/css/teachers.css" />
     <link rel="stylesheet" href="/src/css/intro.css" />
     <link rel="stylesheet" href="/src/css/Steps.css" />
+    <link rel="stylesheet" href="/src/css/prizes.css" />
     <link rel="stylesheet" href="/src/fonts/fonts.css" />
     <title>Document</title>
   </head>
@@ -412,17 +413,219 @@
       <!-- Призы -->
       <section class="prizes">
         <div class="container">
-          <h2 class="prizes-title">prizes-title</h2>
+          <h2 class="prizes-title">
+            Среди зрителей каждой команды разыграем призы:
+          </h2>
           <div class="prizes-cards">
             <div class="prizes-card">
-              <div class="prizes-card-icon"></div>
-              <div class="prizes-card-top"></div>
-              <div class="prizes-card-gift"></div>
+              <!-- первая стрелка иконка без адаптива -->
+              <img
+                class="prizes-card-icon"
+                src="./src/icons/ArrowLight.svg"
+                alt="ArrowLight"
+                height="32"
+              />
+              <div class="prizers-card-text">
+                <p class="prizes-card-top">1 место</p>
+                <h3 class="prizes-card-gift">40 уроков</h3>
+              </div>
             </div>
-            <div class="prizes-card"></div>
-            <div class="prizes-card"></div>
-            <div class="prizes-card"></div>
+            <div class="prizes-card">
+              <!-- вторая стрелка иконка -->
+              <picture class="prizes-card-icon">
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1366px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1024px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowDark.svg"
+                  media="(min-width: 770px)"
+                />
+                <source
+                  srcset="./src/icons/ArrowDark.svg"
+                  media="(min-width: 320px)"
+                  height="32"
+                />
+                <img
+                  src="./src/icons/ArrowDark.svg,"
+                  alt="ArrowDark"
+                  height="32"
+                />
+              </picture>
+              <!-- <img
+                class="prizes-card-icon"
+                src="./src/icons/ArrowDark.svg"
+                alt="ArrowDark"
+                height="32"
+              /> -->
+              <div class="prizers-card-text">
+                <p class="prizes-card-top">2 место</p>
+                <h3 class="prizes-card-gift">28 уроков</h3>
+              </div>
+            </div>
+            <div class="prizes-card">
+              <!-- третья стрелка иконка -->
+              <picture class="prizes-card-icon">
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1366px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1024px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 770px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowDark.svg"
+                  media="(min-width: 320px)"
+                  height="32"
+                />
+                <img
+                  src="./src/icons/ArrowDark.svg,"
+                  alt="ArrowDark"
+                  height="32"
+                />
+              </picture>
+              <div class="prizers-card-text">
+                <p class="prizes-card-top">3 место</p>
+                <h3 class="prizes-card-gift">20 уроков</h3>
+              </div>
+            </div>
+            <div class="prizes-card">
+              <!-- четвертая стрелка иконка -->
+              <picture class="prizes-card-icon">
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1366px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 1024px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowDark.svg"
+                  media="(min-width: 770px)"
+                  height="32"
+                />
+                <source
+                  srcset="./src/icons/ArrowLight.svg"
+                  media="(min-width: 320px)"
+                  height="32"
+                />
+                <img
+                  src="./src/icons/ArrowLight.svg,"
+                  alt="ArrowDark"
+                  height="32"
+                />
+              </picture>
+              <div class="prizes-card-text">
+                <p class="prizes-card-top">4 место</p>
+                <h3 class="prizes-card-gift">12 уроков</h3>
+              </div>
+            </div>
           </div>
+
+          <!-- Изображения монеток у призов -->
+          <div class="prizes-image">
+            <picture class="prizes-image-money">
+              <source
+                srcset="
+                  /src/img/Prizes/Money-1-1366px.webp,
+                  /src/img/Prizes/Money-1-1366px@2x.webp 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Money-1-1024px.webp,
+                  /src/img/Prizes/Money-1-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Money-770px.webp,
+                  /src/img/Prizes/Money-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Money-320px.webp,
+                  /src/img/Prizes/Money-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="/src/img/Prizes/Money-320px.webp" alt="Money" />
+            </picture>
+
+            <div class="prizes-image">
+            <picture class="prizes-image-money-desktop">
+              <source
+                srcset="
+                  /src/img/Prizes/Money-2-1366px.webp,
+                  /src/img/Prizes/Money-2-1366px@2x.webp 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Money-2-1024px.webp,
+                  /src/img/Prizes/Money-2-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              
+              <img src="" alt="" />
+            </picture>
+
+            <picture class="prizes-image-coin">
+              <source
+                srcset="
+                  /src/img/Prizes/Coin-1366px.webp,
+                  /src/img/Prizes/Coin-1366px@2x.webp 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Coin-1024px.webp,
+                  /src/img/Prizes/Coin-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Coin-770px.webp,
+                  /src/img/Prizes/Coin-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Prizes/Coin-320px.webp,
+                  /src/img/Prizes/Coin-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="/src/img/Prizes/Coin-320px.webp" alt="Coin" />
+            </picture>
+          </div>
+
         </div>
       </section>
 
