@@ -167,14 +167,10 @@
 
 .prizes-image-coin {
   position: absolute;
-  position: absolute;
   top: 268px;
   right: 175px;
   z-index: -1;
 }
-
-/* размеры money 109x215
-размеры coin 163x163 */
 
 @media (min-width: 770px) {
   .prizes-image-money {
@@ -218,3 +214,6 @@
     right: 1047px;
   }
 }
+
+/* позиционирование от центра
+padding-left: calc((100vw - 315px) / 2); */

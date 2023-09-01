@@ -21,8 +21,6 @@
 }
 
 @media (min-width: 770px) {
-  .intro-title {
-  }
   .intro-description {
     width: 453px;
     font-size: 24px;
@@ -267,7 +265,8 @@
 .intro-form {
   background-image: url(../img/Fish-320px.webp), url(../img/Bat-320px.webp);
   background-repeat: no-repeat;
-  background-position: top 254px right, top 43px right;
+  background-position: top 254px right calc((100vw / 2) - 160px),
+    top 43px right calc((100vw / 2) - 160px);
 }
 
 @media (min-resolution: 2x) {
@@ -283,7 +282,7 @@
     background-image: url(../img/Fish-but-770px.webp);
     background-repeat: no-repeat;
     background-size: 520px 671px;
-    background-position: top 134px right;
+    background-position: top 134px right calc((100vw / 2) - 385px);
   }
   @media (min-resolution: 2x) {
     .intro-form {
@@ -298,7 +297,9 @@
     background-image: url(../img/Fish-1024px.webp),
       url(../img/Bat-1024px@2x.webp);
     background-size: 616px 545px, 706px 663px;
-    background-position: top 354px right, top 143px right;
+    /* сто процентов видимости / 2 - середина и минус половина контейнера - чтоб найти крайнюю правую точку контейнера */
+    background-position: top 354px right calc((100vw / 2) - 512px),
+      top 143px right calc((100vw / 2) - 512px);
   }
   @media (min-resolution: 2x) {
     .intro-form {
@@ -313,7 +314,8 @@
   .intro-form {
     background-image: url(../img/Fish-1366px.webp), url(../img/Bat-1366px.webp);
     background-size: 774px 659px, 909px 848px;
-    background-position: top 354px right, top 143px right;
+    background-position: top 354px right calc((100vw / 2) - 683px),
+      top 143px right calc((100vw / 2) - 683px);
   }
   @media (min-resolution: 2x) {
     .intro-form {
