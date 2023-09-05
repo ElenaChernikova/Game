@@ -203,7 +203,7 @@
 .intro-benefit {
   display: flex;
   justify-content: flex-start;
-  width: 33.3%;
+  width: 100%;
   padding: 0 20px;
 }
 
