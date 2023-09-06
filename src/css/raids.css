@@ -39,6 +39,7 @@
   }
   .raids-description {
     width: 265px;
+    margin-bottom: 84px;
   }
 }
 
@@ -54,6 +55,7 @@
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.256px;
+    margin-bottom: 42px;
   }
   .raids-info-text {
     font-size: 18px;
@@ -72,6 +74,7 @@
   }
   .raids-description {
     width: 568px;
+    margin-bottom: 60px;
   }
   .raids-info-text {
     font-size: 24px;
@@ -103,15 +106,26 @@
   border: 0px;
   color: #fff;
   text-align: center;
+}
+.raids-info-button p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.048px;
+  margin: 0px;
+}
+
+.raids-info-icon {
+  display: none;
+  margin: 0px;
 }
 
 @media (min-width: 770px) {
   .raids-info {
+    position: absolute;
+    right: 50px;
+    top: 75px;
     width: 382px;
     height: 220px;
     border-radius: 32px;
@@ -119,13 +133,20 @@
   }
   .raids-info-button {
     display: flex;
-    padding: 8px 12px;
     align-items: center;
     gap: 12px;
-    font-size: 18px;
+    border-radius: 9.556px;
+    padding: 0px;
+    padding-left: 8px;
+  }
+  .raids-info-button p {
+    /* font-size: 18px;  не влезает в строку */
     line-height: 24px;
     letter-spacing: -0.054px;
-    border-radius: 9.556px;
+  }
+  .raids-info-icon {
+    display: initial;
+    height: 32px;
   }
 }
 
@@ -133,6 +154,8 @@
   .raids-info {
     width: 460px;
     height: 252px;
+    right: 47px;
+    top: 127px;
     margin-bottom: 70px;
   }
 }
@@ -141,6 +164,8 @@
   .raids-info {
     width: 568px;
     height: 321px;
+    right: 105px;
+    top: 150px;
     margin-bottom: 26px;
   }
   .raids-info-button {
@@ -154,4 +179,22 @@
     height: 66px;
     width: 396px;
   }
+  .raids-info-button p {
+    font-size: 24px;
+  }
+  .raids-info-icon {
+    height: 42px;
+  }
+}
+
+/* Изображения боссов */
+
+.raids-bosses {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+
+.raids-boss {
 }

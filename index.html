@@ -635,23 +635,153 @@
         <div class="container">
           <h2 class="raids-title">Всё про рейды</h2>
           <p class="raids-description">Рейд — это тест на знание английского языка. Вам предстоит сразиться с боссами лексики, грамматики и аудирования. А финальный босс испытаетвсе скиллы сразу!</p>
-          <div class="raids-info">
-            <p class="raids-info-text">Каждый правильный ответ нанесёт урон боссу. Чем больше урона, тем больше очков получит команда вашего предводителя. Открывайте уникальные ачивки и выигрывайте крутые призы вместе!</p>
-            <button class="raids-info-button">Присоединиться к команде</button>
-          </div>
 
           <div class="raids-bosses">
-            <div class="raids-boss">
-              <div class="raids-boss-image">
-                <img src="" alt="raids-boss-image" />
-              </div>
-              <p class="boss-name">boss-name</p>
-              <p class="boss-russian-name">boss-russian-name</p>
-            </div>
-            <div class="raids-boss"></div>
-            <div class="raids-boss"></div>
-            <div class="raids-boss"></div>
+
+            <picture class="raids-boss">
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Fish-1366px.webp,
+                  /src/img/Raids/Boss-Fish-1366px@2x.webp, 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Fish-1024px.webp,
+                  /src/img/Raids/Boss-Fish-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Fish-770px.webp,
+                  /src/img/Raids/Boss-Fish-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Fish-320px.webp,
+                  /src/img/Raids/Boss-Fish-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="/src/img/Raids/Boss-Fish-320px.webp" alt="" />
+            </picture>
+
+            <picture class="raids-boss">
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Skelet-1366px.webp,
+                  /src/img/Raids/Boss-Skelet-1366px@2x.webp, 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Skelet-1024px.webp,
+                  /src/img/Raids/Boss-Skelet-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Skelet-770px.webp,
+                  /src/img/Raids/Boss-Skelet-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Skelet-320px.webp,
+                  /src/img/Raids/Boss-Skelet-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="/src/img/Raids/Boss-Skelet-320px.webp" alt="" />
+            </picture>
+
+            <picture class="raids-boss">
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Bat-1366px.webp,
+                  /src/img/Raids/Boss-Bat-1366px@2x.webp, 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Bat-1024px.webp,
+                  /src/img/Raids/Boss-Bat-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Bat-770px.webp,
+                  /src/img/Raids/Boss-Bat-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Bat-320px.webp,
+                  /src/img/Raids/Boss-Bat-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="/src/img/Raids/Boss-Bat-320px.webp" alt="" />
+            </picture>
+
+            <picture class="raids-boss">
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Main-1366px.webp,
+                  /src/img/Raids/Boss-Main-1366px@2x.webp, 2x
+                "
+                media="(min-width: 1366px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Main-1024px.webp,
+                  /src/img/Raids/Boss-Main-1024px@2x.webp 2x
+                "
+                media="(min-width: 1024px)"
+              />
+              <!-- нет на 770 -->
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Main-770px.webp,
+                  /src/img/Raids/Boss-Main-770px@2x.webp 2x
+                "
+                media="(min-width: 770px)"
+              />
+              <source
+                srcset="
+                  /src/img/Raids/Boss-Main-320px.webp,
+                  /src/img/Raids/Boss-Main-320px@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img src="" alt="" />
+            </picture>
+
           </div>
+
+          <!-- Инфо -->
+          <div class="raids-info">
+            <p class="raids-info-text">Каждый правильный ответ нанесёт урон боссу. Чем больше урона, тем больше очков получит команда вашего предводителя. Открывайте уникальные ачивки и выигрывайте крутые призы вместе!</p>
+            <button class="raids-info-button">
+              <img
+                  class="raids-info-icon"
+                  src="./src/icons/Raids-button.svg"
+                  alt="raids-info-icon"
+                />
+              <p>Присоединиться к команде</p>
+            </button>
+          </div>
+          
         </div>
       </section>
 
