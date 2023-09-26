@@ -202,6 +202,18 @@
   scrollbar-width: none;
 }
 
+/* чтоб скролл не упирался в контейнер
+
+    width: 400px;
+    margin-left: -50px;
+    scrollbar-width: none;
+    padding-left: 50px; */
+
+/* убрать скроллбар */
+.raids-bosses::-webkit-scrollbar {
+  display: none;
+}
+
 .raids-boss {
   margin: 32px 20px 18px 0px;
 }
@@ -229,6 +241,10 @@
 }
 
 /* Изображения бутылки, ручки, монетки начиная с 770px */
+
+.raids-pictures {
+  line-height: 0;
+}
 
 .raids-picture-bottle {
   position: absolute;

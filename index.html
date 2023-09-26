@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/src/css/Steps.css" />
     <link rel="stylesheet" href="/src/css/prizes.css" />
     <link rel="stylesheet" href="/src/css/raids.css" />
+    <link rel="stylesheet" href="/src/css/scoring.css" />
     <link rel="stylesheet" href="/src/fonts/fonts.css" />
     <title>Document</title>
   </head>
@@ -574,7 +575,6 @@
               <img src="/src/img/Prizes/Money-320px.webp" alt="Money" />
             </picture>
 
-            <div class="prizes-image">
             <picture class="prizes-image-money-desktop">
               <source
                 srcset="
@@ -590,7 +590,7 @@
                 "
                 media="(min-width: 1024px)"
               />
-              
+
               <img src="" alt="" />
             </picture>
 
@@ -626,7 +626,6 @@
               <img src="/src/img/Prizes/Coin-320px.webp" alt="Coin" />
             </picture>
           </div>
-
         </div>
       </section>
 
@@ -634,15 +633,19 @@
       <section class="raids">
         <div class="container">
           <h2 class="raids-title">Всё про рейды</h2>
-          <p class="raids-description">Рейд — это тест на знание английского языка. Вам предстоит сразиться с боссами лексики, грамматики и аудирования. А финальный босс испытаетвсе скиллы сразу!</p>
+          <p class="raids-description">
+            Рейд — это тест на знание английского языка. Вам предстоит сразиться
+            с боссами лексики, грамматики и аудирования. А финальный босс
+            испытаетвсе скиллы сразу!
+          </p>
 
           <div class="raids-bosses">
-
             <picture class="raids-boss">
               <source
                 srcset="
                   /src/img/Raids/Boss-Fish-1366px.webp,
-                  /src/img/Raids/Boss-Fish-1366px@2x.webp, 2x
+                  /src/img/Raids/Boss-Fish-1366px@2x.webp,
+                  2x
                 "
                 media="(min-width: 1366px)"
               />
@@ -674,7 +677,8 @@
               <source
                 srcset="
                   /src/img/Raids/Boss-Skelet-1366px.webp,
-                  /src/img/Raids/Boss-Skelet-1366px@2x.webp, 2x
+                  /src/img/Raids/Boss-Skelet-1366px@2x.webp,
+                  2x
                 "
                 media="(min-width: 1366px)"
               />
@@ -706,7 +710,8 @@
               <source
                 srcset="
                   /src/img/Raids/Boss-Bat-1366px.webp,
-                  /src/img/Raids/Boss-Bat-1366px@2x.webp, 2x
+                  /src/img/Raids/Boss-Bat-1366px@2x.webp,
+                  2x
                 "
                 media="(min-width: 1366px)"
               />
@@ -738,7 +743,8 @@
               <source
                 srcset="
                   /src/img/Raids/Boss-Main-1366px.webp,
-                  /src/img/Raids/Boss-Main-1366px@2x.webp, 2x
+                  /src/img/Raids/Boss-Main-1366px@2x.webp,
+                  2x
                 "
                 media="(min-width: 1366px)"
               />
@@ -766,26 +772,29 @@
               />
               <img src="" alt="" />
             </picture>
-
           </div>
 
           <!-- Инфо -->
           <div class="raids-info">
-            <p class="raids-info-text">Каждый правильный ответ нанесёт урон боссу. Чем больше урона, тем больше очков получит команда вашего предводителя. Открывайте уникальные ачивки и выигрывайте крутые призы вместе!</p>
+            <p class="raids-info-text">
+              Каждый правильный ответ нанесёт урон боссу. Чем больше урона, тем
+              больше очков получит команда вашего предводителя. Открывайте
+              уникальные ачивки и выигрывайте крутые призы вместе!
+            </p>
             <button class="raids-info-button">
               <img
-                  class="raids-info-icon"
-                  src="./src/icons/Raids-button.svg"
-                  alt="raids-info-icon"
-                />
+                class="raids-info-icon"
+                src="./src/icons/Raids-button.svg"
+                alt="raids-info-icon"
+              />
               <p>Присоединиться к команде</p>
             </button>
           </div>
 
-            <!-- Изображения фоновые -->
+          <!-- Изображения фоновые -->
           <div class="raids-pictures">
             <!-- монетка -->
-          <picture class="raids-picture-coin">
+            <picture class="raids-picture-coin">
               <source
                 srcset="
                   /src/img/Raids/coin-raids-1366px.webp,
@@ -803,7 +812,7 @@
               <img src="" alt="" />
             </picture>
             <!-- бутылка -->
-          <picture class="raids-picture-bottle">
+            <picture class="raids-picture-bottle">
               <source
                 srcset="
                   /src/img/Raids/bottle-1366px.webp,
@@ -828,7 +837,7 @@
               <img src="" alt="" />
             </picture>
             <!-- ручка -->
-          <picture class="raids-picture-pen">
+            <picture class="raids-picture-pen">
               <source
                 srcset="
                   /src/img/Raids/pen-1366px.webp,
@@ -852,27 +861,325 @@
               />
               <img src="" alt="" />
             </picture>
-        </div>
-
+          </div>
         </div>
       </section>
 
       <!-- Подсчет баллов -->
       <section class="scoring">
         <div class="container">
-          <h2 class="scoring-title">scoring-title</h2>
+          <h2 class="scoring-title">Кто ведет счет</h2>
           <div class="scoring-teachers">
-            <img src="" alt="scoring-teachers" />
-          </div>
-          <p class="scoring-subtitle">scoring-subtitle</p>
-          <div class="scoring-cards">
-            <div class="scoring-card">
-              <div class="scoring-card-icon"></div>
-              <div class="scoring-card-top"></div>
-              <div class="scoring-card-gift"></div>
+            <!-- фиолетовый учитель -->
+            <div class="scoring-teacher">
+              <div class="scoring-purple"></div>
+              <div class="scoring-teacher-achievements">
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/ball.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/fargus.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/horseshoe.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/sunglasses.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/wings.svg"
+                  alt=""
+                  height="35"
+                />
+              </div>
+              <p class="scoring-teacher-name">C_a_k_e</p>
+              <p class="scoring-teacher-points">11 955 DP</p>
+              <!-- <img
+                class="scoring-teacher-img"
+                src="./src/img/Scoring/Teacher-purple-320px.png"
+                alt=""
+                height="144"
+              /> -->
+              <picture class="scoring-teacher-img">
+                <source
+                  srcset="/src/img/Scoring/Teacher-purple-1366px.png"
+                  media="(min-width: 1366px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-purple-1366px.png"
+                  media="(min-width: 1024px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-purple-1366px.png"
+                  media="(min-width: 770px)"
+                  height="64"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-purple-320px.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="/src/img/Scoring/Teacher-purple-320px.png"
+                  alt="Teacher-purple"
+                />
+              </picture>
             </div>
-            <div class="scoring-card"></div>
-            <div class="scoring-card"></div>
+            <!-- желтый учитель -->
+            <div class="scoring-teacher">
+              <div class="scoring-yellow"></div>
+              <div class="scoring-teacher-achievements">
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/wings.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/sunglasses.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/horseshoe.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/fargus.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/ball.svg"
+                  alt=""
+                  height="35"
+                />
+              </div>
+              <p class="scoring-teacher-name">Dread</p>
+              <p class="scoring-teacher-points">5 185 DP</p>
+              <!-- <img
+                class="scoring-teacher-img"
+                src="./src/img/Scoring/Teacher-yellow-320px.png"
+                alt=""
+                height="144"
+              /> -->
+              <picture class="scoring-teacher-img">
+                <source
+                  srcset="/src/img/Scoring/Teacher-yellow-1366px.png"
+                  media="(min-width: 1366px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-yellow-1366px.png"
+                  media="(min-width: 1024px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-yellow-1366px.png"
+                  media="(min-width: 770px)"
+                  height="64"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-yellow-320px.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="/src/img/Scoring/Teacher-yellow-320px.png"
+                  alt="Teacher-yellow"
+                />
+              </picture>
+            </div>
+            <!-- синий учитель -->
+            <div class="scoring-teacher">
+              <div class="scoring-blue"></div>
+              <div class="scoring-teacher-achievements">
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/sunglasses.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/wings.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/horseshoe.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/ball.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/horseshoe.svg"
+                  alt=""
+                  height="35"
+                />
+              </div>
+              <p class="scoring-teacher-name">PCH3LK1N</p>
+              <p class="scoring-teacher-points">11 065 DP</p>
+              <!-- <img
+                class="scoring-teacher-img"
+                src="./src/img/Scoring/Teacher-blue-320px.png"
+                alt=""
+                height="144"
+              /> -->
+              <picture class="scoring-teacher-img">
+                <source
+                  srcset="/src/img/Scoring/Teacher-blue-1366px.png"
+                  media="(min-width: 1366px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-blue-1366px.png"
+                  media="(min-width: 1024px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-blue-1366px.png"
+                  media="(min-width: 770px)"
+                  height="64"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-blue-320px.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="/src/img/Scoring/Teacher-blue-320px.png"
+                  alt="Teacher-blue"
+                />
+              </picture>
+            </div>
+            <!-- красный учитель -->
+            <div class="scoring-teacher">
+              <div class="scoring-red"></div>
+              <div class="scoring-teacher-achievements">
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/horseshoe.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/wings.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/ball.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/sunglasses.svg"
+                  alt=""
+                  height="35"
+                />
+                <img
+                  class="scoring-teacher-achievement"
+                  src="./src/img/Scoring/fargus.svg"
+                  alt=""
+                  height="35"
+                />
+              </div>
+              <p class="scoring-teacher-name">iLame</p>
+              <p class="scoring-teacher-points">2 765 DP</p>
+              <!-- <img
+                class="scoring-teacher-img"
+                src="./src/img/Scoring/Teacher-red-320px.png"
+                alt=""
+                height="144"
+              /> -->
+              <picture class="scoring-teacher-img">
+                <source
+                  srcset="/src/img/Scoring/Teacher-red-1366px.png"
+                  media="(min-width: 1366px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-red-1366px.png"
+                  media="(min-width: 1024px)"
+                  height="96"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-red-1366px.png"
+                  media="(min-width: 770px)"
+                  height="64"
+                />
+                <source
+                  srcset="/src/img/Scoring/Teacher-red-320px.png"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="/src/img/Scoring/Teacher-red-320px.png"
+                  alt="Teacher-red"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="description-and-cards">
+            <p class="scoring-description">За что начисляются Damage Points:</p>
+            <div class="scoring-cards">
+              <div class="scoring-card">
+                <img
+                  class="scoring-card-icon"
+                  src="./src/icons/ArrowLight.svg"
+                  alt="ArrowLight"
+                  height="32"
+                />
+                <p class="scoring-card-text">Количество игроков в команде</p>
+              </div>
+              <div class="scoring-card">
+                <img
+                  class="scoring-card-icon"
+                  src="./src/icons/ArrowLight.svg"
+                  alt="ArrowLight"
+                  height="32"
+                />
+                <p class="scoring-card-text">
+                  Результаты рейда каждого участника
+                </p>
+              </div>
+              <div class="scoring-card">
+                <img
+                  class="scoring-card-icon"
+                  src="./src/icons/ArrowLight.svg"
+                  alt="ArrowLight"
+                  height="32"
+                />
+                <p class="scoring-card-text">Активность в телеграм-боте</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

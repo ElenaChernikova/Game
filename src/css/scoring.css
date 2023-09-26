@@ -1,0 +1,373 @@
+/* Заголовок и тексты */
+
+.scoring-title {
+  color: #e4fbff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.96px;
+  margin: 0px;
+}
+
+.scoring-description {
+  color: #e4fbff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.192px;
+  margin: 0px;
+}
+
+.scoring-card-text {
+  display: flex;
+  align-self: stretch;
+  color: #c2f5ff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.12px;
+}
+
+@media (min-width: 770px) {
+  .scoring-description {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.256px;
+  }
+  .scoring-card-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scoring-title {
+    font-size: 86px;
+    line-height: 88px;
+    letter-spacing: -1.29px;
+  }
+  .scoring-card-text {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.12px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scoring-title {
+    font-size: 124px;
+    line-height: 128px;
+    letter-spacing: -3.1px;
+  }
+  .description-and-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .scoring-description {
+    padding-top: 60px;
+  }
+}
+
+/* Карточки: расположение и содержание */
+
+.scoring-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+}
+
+.scoring-card {
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  /* width: 300px; */
+  padding: 20px 20px 20px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 16px;
+  background-color: #394650;
+  margin-top: 36px;
+}
+
+.scoring-card-icon {
+  position: absolute;
+  top: -15px;
+  left: 136px;
+}
+
+@media (min-width: 770px) {
+  .scoring-cards {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .scoring-card {
+    margin-right: 24px;
+    width: 208px;
+  }
+  .scoring-card:last-child {
+    margin-right: 0px;
+  }
+  .scoring-card-icon {
+    left: 88px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scoring-card-icon {
+    left: 130px;
+  }
+  .scoring-card {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scoring-card-icon {
+    left: 122px;
+  }
+  .scoring-card {
+    width: 275px;
+  }
+}
+
+/* Блок преподов */
+
+.scoring-teachers {
+  display: flex;
+  flex-direction: row;
+  height: 446px;
+  width: 300px;
+  margin: 16px 0 46px;
+}
+
+.scoring-teacher {
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 75px;
+  height: 446px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.scoring-teacher:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.48);
+}
+
+.scoring-teacher:first-child {
+  border-radius: 16px 0px 0px 16px;
+}
+
+.scoring-teacher:last-child {
+  border-radius: 0px 16px 16px 0px;
+}
+
+@media (min-width: 770px) {
+  .scoring-teachers {
+    flex-direction: column;
+    height: 257px;
+    width: 672;
+    /* border-radius: 32px;  */
+  }
+  .scoring-teacher {
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    height: 64px;
+    width: 672px;
+  }
+  .scoring-teacher:first-child {
+    border-radius: 32px 32px 0px 0px;
+  }
+  .scoring-teacher:last-child {
+    border-radius: 0px 0px 32px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scoring-teachers {
+    height: 384px;
+    width: 939;
+  }
+  .scoring-teacher {
+    height: 96px;
+    width: 939px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scoring-teachers {
+    height: 384px;
+    width: 1160;
+  }
+  .scoring-teacher {
+    height: 96px;
+    width: 1160px;
+  }
+}
+
+.scoring-purple {
+  background-color: #d571ff;
+  width: 75px;
+  height: 359px;
+  border-radius: 4px 4px 0 16px;
+  opacity: 0.36;
+  position: absolute;
+}
+
+.scoring-yellow {
+  background-color: #ffc700;
+  width: 75px;
+  height: 251px;
+  border-radius: 4px 4px 0 0;
+  opacity: 0.36;
+  position: absolute;
+}
+
+.scoring-blue {
+  background-color: #00c1ff;
+  width: 75px;
+  height: 336px;
+  border-radius: 4px 4px 0 0;
+  opacity: 0.36;
+  position: absolute;
+}
+
+.scoring-red {
+  background-color: #ff4545;
+  width: 75px;
+  height: 236px;
+  border-radius: 4px 4px 16px 0;
+  opacity: 0.36;
+  position: absolute;
+}
+
+@media (min-width: 770px) {
+  .scoring-purple {
+    width: 511px;
+    height: 64px;
+  }
+  .scoring-yellow {
+    width: 316px;
+    height: 64px;
+  }
+  .scoring-blue {
+    width: 481px;
+    height: 64px;
+  }
+  .scoring-red {
+    width: 247px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scoring-purple {
+    width: 577px;
+    height: 96px;
+  }
+  .scoring-yellow {
+    width: 372px;
+    height: 96px;
+  }
+  .scoring-blue {
+    width: 547px;
+    height: 96px;
+  }
+  .scoring-red {
+    width: 312px;
+    height: 96px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scoring-purple {
+    width: 827px;
+    height: 96px;
+  }
+  .scoring-yellow {
+    width: 477px;
+    height: 96px;
+  }
+  .scoring-blue {
+    width: 777px;
+    height: 96px;
+  }
+  .scoring-red {
+    width: 377px;
+    height: 96px;
+  }
+}
+
+.scoring-teacher-img {
+  z-index: 2;
+  margin-bottom: -5px;
+}
+
+.scoring-teacher-achievements {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.scoring-teacher-achievement {
+  margin-bottom: -10px;
+}
+
+.scoring-teacher-name {
+  color: #f9ebff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.014px;
+  margin: 0;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+.scoring-teacher-points {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.014px;
+  margin: 0;
+  margin-left: 4px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 770px) {
+  .scoring-teacher-achievements {
+    flex-direction: row;
+    top: 16px;
+    left: 538px;
+  }
+  .scoring-teacher-achievement {
+    margin-bottom: 0;
+    margin-left: -10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scoring-teacher-achievements {
+    top: 33px;
+    left: 794px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scoring-teacher-achievements {
+    top: 32px;
+    left: 1014px;
+  }
+}
