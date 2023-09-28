@@ -153,6 +153,7 @@
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  overflow: hidden;
 }
 
 .scoring-teacher:nth-child(even) {
@@ -305,7 +306,7 @@
 
 .scoring-teacher-img {
   z-index: 2;
-  margin-bottom: -5px;
+  font-size: 0;
 }
 
 .scoring-teacher-achievements {
@@ -319,11 +320,51 @@
 
 .scoring-teacher-achievement {
   margin-bottom: -10px;
+  position: relative;
+  font-size: 0;
+}
+
+.scoring-teacher-achievement:nth-child(1) {
+  z-index: 5;
+}
+
+.scoring-teacher-achievement:nth-child(2) {
+  z-index: 4;
+}
+
+.scoring-teacher-achievement:nth-child(3) {
+  z-index: 3;
+}
+
+.scoring-teacher-achievement:nth-child(4) {
+  z-index: 2;
+}
+
+.scoring-teacher-achievement:nth-child(5) {
+  z-index: 1;
+}
+
+.scoring-achievement-number {
+  position: absolute;
+  z-index: 6;
+  font-size: 13px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 35px;
+}
+
+.scoring-teacher-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .scoring-teacher-name {
   color: #f9ebff;
-  font-size: 14px;
+  font-size: 13px;
+  font-variant-numeric: lining-nums proportional-nums;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -331,12 +372,13 @@
   margin: 0;
   margin-left: 4px;
   margin-bottom: 4px;
+  z-index: 2;
 }
 
 .scoring-teacher-points {
   opacity: 0.5;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
@@ -362,6 +404,14 @@
   .scoring-teacher-achievements {
     top: 33px;
     left: 794px;
+  }
+  .scoring-teacher-name {
+    font-size: 24px;
+    line-height: normal;
+  }
+  .scoring-teacher-points {
+    font-size: 24px;
+    line-height: normal;
   }
 }
 

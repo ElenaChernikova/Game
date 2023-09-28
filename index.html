@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/src/css/prizes.css" />
     <link rel="stylesheet" href="/src/css/raids.css" />
     <link rel="stylesheet" href="/src/css/scoring.css" />
+    <link rel="stylesheet" href="/src/css/about-school.css" />
     <link rel="stylesheet" href="/src/fonts/fonts.css" />
     <title>Document</title>
   </head>
@@ -874,12 +875,15 @@
             <div class="scoring-teacher">
               <div class="scoring-purple"></div>
               <div class="scoring-teacher-achievements">
-                <img
-                  class="scoring-teacher-achievement"
-                  src="./src/img/Scoring/ball.svg"
-                  alt=""
-                  height="35"
-                />
+                <span class="scoring-teacher-achievement">
+                  <p class="scoring-achievement-number">+16</p>
+                  <img
+                    class=""
+                    src="./src/img/Scoring/ball.svg"
+                    alt=""
+                    height="35"
+                  />
+                </span>
                 <img
                   class="scoring-teacher-achievement"
                   src="./src/img/Scoring/fargus.svg"
@@ -905,8 +909,10 @@
                   height="35"
                 />
               </div>
-              <p class="scoring-teacher-name">C_a_k_e</p>
-              <p class="scoring-teacher-points">11 955 DP</p>
+              <div class="scoring-teacher-data">
+                <p class="scoring-teacher-name">C_a_k_e</p>
+                <p class="scoring-teacher-points">11 955 DP</p>
+              </div>
               <!-- <img
                 class="scoring-teacher-img"
                 src="./src/img/Scoring/Teacher-purple-320px.png"
@@ -974,8 +980,10 @@
                   height="35"
                 />
               </div>
-              <p class="scoring-teacher-name">Dread</p>
-              <p class="scoring-teacher-points">5 185 DP</p>
+              <div class="scoring-teacher-data">
+                <p class="scoring-teacher-name">Dread</p>
+                <p class="scoring-teacher-points">5 185 DP</p>
+              </div>
               <!-- <img
                 class="scoring-teacher-img"
                 src="./src/img/Scoring/Teacher-yellow-320px.png"
@@ -1043,8 +1051,10 @@
                   height="35"
                 />
               </div>
-              <p class="scoring-teacher-name">PCH3LK1N</p>
-              <p class="scoring-teacher-points">11 065 DP</p>
+              <div class="scoring-teacher-data">
+                <p class="scoring-teacher-name">PCH3LK1N</p>
+                <p class="scoring-teacher-points">11 065 DP</p>
+              </div>
               <!-- <img
                 class="scoring-teacher-img"
                 src="./src/img/Scoring/Teacher-blue-320px.png"
@@ -1112,8 +1122,10 @@
                   height="35"
                 />
               </div>
-              <p class="scoring-teacher-name">iLame</p>
-              <p class="scoring-teacher-points">2 765 DP</p>
+              <div class="scoring-teacher-data">
+                <p class="scoring-teacher-name">iLame</p>
+                <p class="scoring-teacher-points">2 765 DP</p>
+              </div>
               <!-- <img
                 class="scoring-teacher-img"
                 src="./src/img/Scoring/Teacher-red-320px.png"
@@ -1187,15 +1199,59 @@
       <!-- Инфо о школе -->
       <section class="about-school">
         <div class="container">
-          <h2 class="about-school-title">about-school-title</h2>
-          <div class="about-school-image">
-            <img src="" alt="about-school-image" />
+          <div class="about-school-title-image">
+            <h2 class="about-school-title">
+              Прокачайте свой английский вместе с онлайн- школой Skyeng
+            </h2>
+            <!-- Изображение -->
+            <picture class="about-school-image">
+              <source
+                srcset="/src/img/About-school/about-school-img-1366px.png"
+                media="(min-width: 1366px)"
+                height="561"
+              />
+              <source
+                srcset="/src/img/About-school/about-school-img-1366px.png"
+                media="(min-width: 1024px)"
+                height="489"
+              />
+              <source
+                srcset="/src/img/About-school/about-school-img-1366px.png"
+                media="(min-width: 770px)"
+                height="302"
+              />
+              <source
+                srcset="/src/img/About-school/about-school-img-320px.png"
+                media="(min-width: 320px)"
+                height="276"
+              />
+              <img
+                src="/src/img/About-school/about-school-img-320px.png"
+                alt="Teacher-red"
+              />
+            </picture>
           </div>
-          <p class="about-school-description">about-school-description</p>
+          <!-- Описание -->
+          <div class="about-school-description">
+            <ul>
+              <li class="about-school-paragraph">
+                Заставим поверить, что английский может быть реально интересным
+              </li>
+              <li class="about-school-paragraph">
+                Дадим лексику и грамматику, которые пригодятся в повседневной
+                жизни
+              </li>
+              <li class="about-school-paragraph">
+                Поможем с лёгкостью заговорить на английском с иностранцами
+              </li>
+            </ul>
+          </div>
           <!-- Блок для скролла -->
           <div class="about-school-scroll">
-            <h2 class="about-school-text">title</h2>
-            <button class="about-school-button">button</button>
+            <p class="about-school-text">
+              Запишитесь на бесплатный вводный урок уже сейчас
+            </p>
+            <button class="about-school-button">Записаться</button>
           </div>
         </div>
       </section>
